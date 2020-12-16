@@ -71,7 +71,7 @@ public virtual class fflib_SObjects
 		for (SObject record : getRecords())
 		{
 			Object fieldValue = record.get(sObjectField);
-			if (fieldValue = null) continue;
+			if (fieldValue == null) continue;
 			result.add(Id.valueOf(String.valueOf(fieldValue)));
 		}
 		return result;
