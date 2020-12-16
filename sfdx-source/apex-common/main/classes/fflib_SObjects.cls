@@ -64,6 +64,19 @@ public virtual class fflib_SObjects
 		return SObjectDescribe.getSObjectType();
 	}
 
+
+	protected virtual Set<Id> getIdFieldValues(Schema.SObjectField sObjectField)
+	{
+		Set<Id> result = new Set<Id>();
+		for (SObject record : getRecords())
+		{
+			Object fieldValue = record.get(sObjectField);
+			if (fieldValue = null) continue;
+			result.add(Id.valueOf(String.valueOf(fieldValue)));
+		}
+		return result;
+	}
+
 	protected virtual Set<Object> getFieldValues(Schema.SObjectField sObjectField)
 	{
 		Set<Object> result = new Set<Object>();
