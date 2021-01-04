@@ -25,6 +25,13 @@
 **/
 public interface fflib_Domain
 {
+	/**
+	 * @return The object type of the Domain
+	 */
 	Object getType();
+
+	/**
+	 * @return Returns the objects contains in the domain
+	 */
 	List<Object> getObjects();
 }
