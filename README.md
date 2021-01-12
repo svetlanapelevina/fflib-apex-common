@@ -39,7 +39,8 @@ This fork of fflib-apex-commons has some major changes to its architecture, whil
   
   
 ## Road Map for fflib-apex-common v2.0
-
+- **UnitOfWork redesign** </br>
+  A more efficient unitOfWork, also able to process any kind of task and taking up less CPU time
 - **Selector Architecture** <br/>
   The selector will be redesigned to that its not coupled to a database. 
   In this new architecture the selector will retrieve data from wherever it is stored.
