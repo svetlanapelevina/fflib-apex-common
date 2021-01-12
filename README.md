@@ -28,6 +28,9 @@ This fork of fflib-apex-commons has some major changes to its architecture, whil
     - ordering 
     - limit
     - offset
+- [Criteria based filtering for domain and selector](docs/criteria/README.md) <br/> 
+  The criteria class can be used to have one common filter for both selector and domain classes. 
+  Where the selector is querying its data for a source and the domain queries the data in memory from its own objects.
 - [Application factories redesigned and can use Force-DI](docs/application/README.md) <br/>
   Redesign of interface structure of the Application class factories, in order to easily replace their implementation.
   Now force-di is fully integrated into the application 
@@ -37,10 +40,6 @@ This fork of fflib-apex-commons has some major changes to its architecture, whil
   
 ## Road Map for fflib-apex-common v2.0
 
-- **Criteria class** <br/> 
-  The criteria class can be used to have one common selector method for both selector and domain classes. 
-  Where the selector is querying its data for a source and the domain queries the data in memory from its own objects.
-  
 - **Selector Architecture** <br/>
   The selector will be redesigned to that its not coupled to a database. 
   In this new architecture the selector will retrieve data from wherever it is stored.
