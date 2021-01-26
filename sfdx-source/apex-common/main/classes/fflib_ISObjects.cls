@@ -23,8 +23,8 @@
  *  OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 **/
-public interface fflib_SObjects
-		extends fflib_Objects
+public interface fflib_ISObjects
+		extends fflib_IObjects
 {
 
 	/**
